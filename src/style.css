@@ -20,6 +20,17 @@ body {
   border-width: 2px 7px 7px 2px;
 }
 
+#bottom {
+  float: right;
+  margin-top: 5px;
+}
+
 .figure {
   display: inherit;
+}
+
+#value {
+  margin-top: 1px;
+  margin-left: 43px;
+  font-size: 60px;
 }

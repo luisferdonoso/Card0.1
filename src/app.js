@@ -16,7 +16,23 @@ function generateCard() {
   let numFig = Math.floor(Math.random() * 3);
   let figure = figures[numFig];
   let color = numFig < 1 ? "red" : "black";
+  let num = Math.floor(Math.random() * 12) * 1;
+  switch (num) {
+    case 1:
+      num = "A";
+      break;
+    case 11:
+      num = "4";
+      break;
+    case 12:
+      num = "K";
+      break;
+    case 13:
+      num = "7";
+      break;
+  }
 
   document.querySelectorAll(".figure").forEach(elm => (elm.innerHTML = figure));
   document.getElementById("card").style.color = color;
+  document.querySelectorAll("#value").forEach(elm => (elm.innerHTML = num));
 }
